@@ -40,3 +40,42 @@ Install dependencies using npm install
 Start the application using npx expo start
 
 View the app using the Expo Go mobile application or an emulator
+
+## Changelog — Changes Since Part 2
+
+### Bug Fixes from Part 2 Feedback
+- **Course selection was not a real dropdown** — replaced the three buttons with an actual Picker dropdown component from @react-native-picker/picker. The selected course highlights in green.
+- **Total items and prices not visible enough** — redesigned the stats section on the home screen with a bordered green card, larger white numbers and clearer labels for each course average.
+
+### New Features Added for Final POE
+- Added average price per course breakdown on the home screen (Starters, Mains, Dessert)
+- Moved dish adding functionality to a dedicated Manage Menu screen
+- Menu items are stored in a shared array in App.tsx and passed down to all screens
+- Added remove functionality with a red delete button on each dish
+- Added Filter screen allowing guests to filter dishes by course
+- Added Chef Christoffel logo to the header of all screens
+
+### Code Improvements
+- Refactored calcAverage function in HomeScreen to use a for loop
+- Added descriptive comments to all key functions and components
+- Separated render functions (renderMenuItem, renderDish) for cleaner code
+- Improved input validation in saveItem to check for invalid prices
+
+### UI Improvements
+- Stats section redesigned to be more visible with green bordered card
+- Dish cards now have a green left border accent
+- Filter buttons made larger and easier to tap
+- Course tags on home screen styled as pill badges
+- Logo added to top left of every screen header
+
+---
+
+## References
+
+- React Native Documentation: https://reactnative.dev/docs/getting-started
+- Expo Documentation: https://docs.expo.dev
+- React Navigation: https://reactnavigation.org/docs/getting-started
+- React Native Picker: https://github.com/react-native-picker/picker
+- TypeScript Documentation: https://www.typescriptlang.org/docs
+
+
